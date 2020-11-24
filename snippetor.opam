@@ -1,0 +1,21 @@
+opam-version: "2.0"
+name: "snippetor"
+version: "0.0"
+maintainer: "smimram@gmail.com"
+homepage: "https://github.com/smimram/snippetor/"
+authors: "Samuel Mimram"
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "dune"
+  "ocaml" {>= "4.08.0"}
+]
+bug-reports: "https://github.com/smimram/snippetor/issues"
+dev-repo: "git+https://github.com/smimram/snippetor.git"
+synopsis: "Extract excerpts from code"
+description: """
+Snippettor is a tool to extract excerpts from code (for now OCaml and Agda are
+supported). It can typically be used in order to include portions of code in
+LaTeX files, while ensuring that it is compiling.
+"""
