@@ -43,7 +43,7 @@ let () =
   let outdir = "include/" in
   let ocni = open_out (outdir^fname^".noimport") in
   let ocni_first = ref true in
-  let ocs = ref ["include", open_out (outdir^fname)] in
+  let ocs = ref ["include", open_out (outdir^fname); "include", open_out (outdir^fname^".include")] in
   let output l =
     List.iter (fun (_,oc) -> output_string oc (l^"\n")) !ocs;
     if String.length l < 11 || String.sub l 0 11 <> "open import" then
