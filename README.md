@@ -48,5 +48,7 @@ The usage for Agda files is similar, excepting that comments are of the form `--
 More options
 ------------
 
-You can use comments of the form `(* !INDENT -2 *)` in order to unindent the
-following block of code by two blanks.
+- You can use comments of the form `(* !INDENT -2 *)` in order to unindent the
+  following block of code by two blanks.
+- You can use `(* !HIDE *)` to hide the following line within a snippet (and `(*
+  !HIDE 5 *)` to hide the following 5 lines).
