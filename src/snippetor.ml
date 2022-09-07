@@ -16,7 +16,11 @@ let () =
       "--ocaml", Arg.Unit (fun () -> mode := OCaml), "OCaml mode."
     ]
     filename "snippetor [options] file";
-  if !fname = "" then failwith "Please provide a file name."
+  if !fname = "" then
+    (
+      Printf.eprintf "Please provide a file name.\n%!";
+      exit 1
+    )
 
 module RE = struct
   let regexp s =

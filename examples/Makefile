@@ -1,7 +1,9 @@
+SNIPPETOR = ../snippetor
+
 all:
 	@mkdir -p include
-	@snippetor example.ml
-	@snippetor test.agda
+	@$(SNIPPETOR) example.ml
+	@$(SNIPPETOR) test.agda
 
 clean:
 	rm -rf include

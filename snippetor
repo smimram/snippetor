@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export DIR=$(dirname "$0")
+dune exec --root=$DIR src/snippetor.exe "$@"
