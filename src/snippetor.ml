@@ -26,8 +26,8 @@ module RE = struct
   let regexp s =
     let s =
       match !mode with
-      | Agda -> "[ ]*-- !" ^ s
-      | OCaml -> "[ ]*(\\* !" ^ s
+      | Agda -> "[ ]*-- !?" ^ s
+      | OCaml -> "[ ]*(\\* !?" ^ s
     in
     Str.regexp s
 
