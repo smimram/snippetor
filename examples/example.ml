@@ -1,3 +1,8 @@
+(* BEGIN id *)
+(* This is the identity. *)
+let id x = x
+(* END *)
+
 (* BEGIN suc *)
 let rec suc n =
   if n = 0 then 1 else 1 + suc (n-1)
