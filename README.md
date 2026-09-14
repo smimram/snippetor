@@ -1,7 +1,7 @@
-Snippettor
+Snippetor
 ==========
 
-Snippettor is a tool to extract excerpts from code (for now [OCaml](https://ocaml.org/) and [Agda](https://wiki.portal.chalmers.se/agda/) are supported). I use it to include portions of code in my LaTeX files
+Snippetor is a tool to extract excerpts from code (for now [OCaml](https://ocaml.org/) and [Agda](https://wiki.portal.chalmers.se/agda/) are supported). I use it to include portions of code in my LaTeX files
 (e.g. [this course](http://pp.mimram.fr/)), while ensuring that it is compiling.
 
 Usage
